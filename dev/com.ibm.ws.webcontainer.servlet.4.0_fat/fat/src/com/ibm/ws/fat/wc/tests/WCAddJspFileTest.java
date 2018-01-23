@@ -10,25 +10,12 @@
  *******************************************************************************/
 package com.ibm.ws.fat.wc.tests;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.ClassRule;
-import org.junit.Test;
-
-import com.ibm.ws.fat.util.LoggingTest;
-import com.ibm.ws.fat.util.SharedServer;
 import com.ibm.ws.fat.wc.WCApplicationHelper;
-
-import componenttest.custom.junit.runner.Mode;
-import componenttest.custom.junit.runner.Mode.TestMode;
 
 /**
  * All Servlet 4.0 tests with all applicable server features enabled.
@@ -82,7 +69,7 @@ public class WCAddJspFileTest extends LoggingTest {
      * @throws Exception
      */
     @Test
-    public void testJSPOne() throws Exception {
+    public void testJSPOne() {
 
         this.verifyResponse("/TestAddJspFile/jsp1", "Welcome to jsp one.jsp");
     }

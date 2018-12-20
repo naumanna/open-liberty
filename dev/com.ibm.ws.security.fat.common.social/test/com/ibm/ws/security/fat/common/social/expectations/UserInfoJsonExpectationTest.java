@@ -247,7 +247,7 @@ public class UserInfoJsonExpectationTest extends CommonTestClass {
 
             final String content = "It was the best of times, it was the worst of times." + UserInfoJsonExpectation.SERVLET_OUTPUT_PREFIX + "{ \"Hello\":\"Bob\" } world!";
             JsonObject result = exp.readJsonFromContent(content);
-            assertNotNull("Result should not have been null but was.", result);
+            assertNotNull("Result should not have been null but was.", null);
             assertEquals("Did not find the expected value in the extracted JSON object. Result was: " + result, "Bob", result.getString("Hello"));
         } catch (Throwable t) {
             outputMgr.failWithThrowable(testName.getMethodName(), t);

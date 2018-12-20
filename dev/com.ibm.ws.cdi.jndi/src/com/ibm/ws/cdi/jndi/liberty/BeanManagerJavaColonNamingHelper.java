@@ -145,4 +145,3 @@ public class BeanManagerJavaColonNamingHelper implements JavaColonNamingHelper
     {
         return cdiServiceRef.getService();
     }
-}

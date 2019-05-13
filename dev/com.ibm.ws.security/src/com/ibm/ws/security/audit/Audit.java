@@ -10,7 +10,7 @@
  *******************************************************************************/
 package com.ibm.ws.security.audit;
 
-import com.ibm.websphere.ras.annotation.Trivial;
+import com.ibm.websphere.ras.annotation.Trivial
 
 /**
  * This class provides an audit probe point method and constants.

@@ -11,6 +11,7 @@
 package com.ibm.ws.monitor.internal;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
@@ -22,7 +23,7 @@ public class AttachTest {
     @Test
     public void testGetRuntimeMXBean() {
         RuntimeMXBean runtimeMxBean = ManagementFactory.getRuntimeMXBean();
-        assertNotNull(runtimeMxBean);
+        assertNull(runtimeMxBean);
 
         System.out.println("runtimeMxBean = " + runtimeMxBean);
         System.out.println("runtimeMxBean.getName() = " + runtimeMxBean.getName());

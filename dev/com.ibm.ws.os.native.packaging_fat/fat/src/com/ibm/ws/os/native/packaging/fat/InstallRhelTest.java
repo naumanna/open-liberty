@@ -43,7 +43,7 @@ public class InstallRhelTest extends InstallUtilityToolTest{
         String METHOD_NAME = "testInstallRpm";
         entering(c, METHOD_NAME);
 
-        String[] param1s = { "install", "./openliberty-19.0.0.5-1.noarch.rpm" };
+        String[] param1s = { "install", "./openliberty-19.0.0.5-1.noarch.rpm" }; //this command needs the path to the rpm/deb
         ProgramOutput po = runCommand(METHOD_NAME, "yum", param1s);
         assertEquals("Expected exit code", 0, po.getReturnCode());
         exiting(c, METHOD_NAME);
@@ -80,7 +80,6 @@ public class InstallRhelTest extends InstallUtilityToolTest{
         assertEquals("Expected exit code", 0, po2.getReturnCode());
         exiting(c, METHOD_NAME);
     }
-
 
     @Test
     public void testUninstallRpm() throws Exception {

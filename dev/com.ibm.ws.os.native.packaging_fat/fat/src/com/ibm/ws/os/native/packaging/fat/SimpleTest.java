@@ -8,7 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package com.ibm.ws.os.native.packaging.fat;
+package com.ibm.ws.os.nativePackaging.fat;
 
 import static org.junit.Assert.assertTrue;
 
@@ -46,7 +46,7 @@ public class SimpleTest extends FATServletClient {
 
     public static final String APP_NAME = "app1";
 
-    @Server("com.ibm.ws.os.specific.packaging_fat")
+    @Server("com.ibm.ws.os.native.packaging_fat")
     @TestServlet(servlet = TestServletA.class, contextRoot = APP_NAME)
     public static LibertyServer server;
 

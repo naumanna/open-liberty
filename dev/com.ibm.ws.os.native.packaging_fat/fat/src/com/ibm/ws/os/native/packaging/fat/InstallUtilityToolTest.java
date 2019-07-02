@@ -1,4 +1,4 @@
-package com.ibm.ws.os.native.packaging.fat;
+package com.ibm.ws.os.nativePackaging.fat;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;

@@ -1,4 +1,4 @@
-package com.ibm.ws.os.nativePackaging.fat;
+package com.ibm.ws.os.packaging.fat;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -24,9 +24,6 @@ import com.ibm.websphere.simplicity.log.Log;
 import componenttest.topology.impl.LibertyServer;
 import componenttest.topology.impl.LibertyServerFactory;
 
-/**
- *
- */
 public abstract class InstallUtilityToolTest {
 
     private static final Class<?> c = InstallUtilityToolTest.class;

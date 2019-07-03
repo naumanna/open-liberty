@@ -1,4 +1,4 @@
-package com.ibm.ws.os.nativePackaging.fat;
+package com.ibm.ws.os.packaging.fat;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -16,9 +16,6 @@ import com.ibm.websphere.simplicity.ProgramOutput;
 import com.ibm.websphere.simplicity.log.Log;
 import com.ibm.websphere.simplicity.OperatingSystem;
 
-/**
- *
- */
 public class InstallUbuntuTest extends InstallUtilityToolTest{
     private static final Class<?> c = InstallUbuntuTest.class;
 

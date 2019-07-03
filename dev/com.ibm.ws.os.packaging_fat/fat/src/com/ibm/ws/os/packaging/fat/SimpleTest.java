@@ -8,7 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package com.ibm.ws.os.nativePackaging.fat;
+package com.ibm.ws.os.packaging.fat;
 
 import static org.junit.Assert.assertTrue;
 
@@ -46,7 +46,7 @@ public class SimpleTest extends FATServletClient {
 
     public static final String APP_NAME = "app1";
 
-    @Server("com.ibm.ws.os.native.packaging_fat")
+    @Server("com.ibm.ws.os.packaging_fat")
     @TestServlet(servlet = TestServletA.class, contextRoot = APP_NAME)
     public static LibertyServer server;
 
@@ -81,16 +81,5 @@ public class SimpleTest extends FATServletClient {
                    features.contains("servlet-3.1"));
         assertTrue("No EE8 features should be enabled when this test runs: " + features,
                    !features.contains("servlet-4.0"));
-    }
-
-    @Test
-    public void testEE8Only() throws Exception {
-
-        // Verify only EE8 features are enabled
-        Set<String> features = server.getServerConfiguration().getFeatureManager().getFeatures();
-        assertTrue("Expected the Java EE 8 feature 'servlet-4.0' to be enabled but was not: " + features,
-                   features.contains("servlet-4.0"));
-        assertTrue("No EE7 features should be enabled when this test runs: " + features,
-                   !features.contains("servlet-3.1"));
     }
 }

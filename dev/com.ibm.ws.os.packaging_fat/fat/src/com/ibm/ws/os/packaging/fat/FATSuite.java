@@ -8,7 +8,7 @@
  * Contributors:
  *     IBM Corporation - initial API and implementation
  *******************************************************************************/
-package com.ibm.ws.os.nativePackaging.fat;
+package com.ibm.ws.os.packaging.fat;
 
 import org.junit.ClassRule;
 import org.junit.runner.RunWith;

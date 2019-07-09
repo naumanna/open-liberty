@@ -44,7 +44,7 @@ public abstract class InstallUtilityToolTest {
      */
     protected static void setupEnv() throws Exception {
         final String METHOD_NAME = "setup";
-        server = LibertyServerFactory.getLibertyServer("com.ibm.ws.os.native.packaging_fat");
+        server = LibertyServerFactory.getLibertyServer("com.ibm.ws.os.packaging_fat");
         installRoot = server.getInstallRoot();
         Log.info(c, METHOD_NAME, "installRoot: " + installRoot);
         cleanDirectories = new ArrayList<String>();
